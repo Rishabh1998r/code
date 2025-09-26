@@ -1,10 +1,23 @@
-HELP.md
+# Java build output
 target/
+*.log
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+
+# Maven wrapper JAR (exclude maven-wrapper)
 !.mvn/wrapper/maven-wrapper.jar
+# Ignore all target directories in your project (compiled files)
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### STS ###
+# Gradle build output
+.gradle/
+build/
+
+# Eclipse/STS
 .apt_generated
 .classpath
 .factorypath
@@ -13,13 +26,13 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
+# IntelliJ IDEA
 .idea
 *.iws
 *.iml
 *.ipr
 
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
@@ -29,5 +42,39 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### VS Code ###
+# VS Code
 .vscode/
+
+# Node.js modules (for any JavaScript/Node.js assets you may have)
+node_modules/
+
+# Temporary files
+*.swp
+*.bak
+*.tmp
+*.DS_Store
+
+# Docker-related files
+*.dockerignore
+Dockerfile
+docker-compose.yml
+
+# Misc
+*.iml
+*.hprof
+
+# Large files to exclude
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# Ignore Maven/Gradle dependency directories if you have them
+**/.mvn/
+**/node_modules/
+**/target/
+**/.idea/
+
+# Exclude environment files or sensitive info
+*.env
+*.log
